@@ -1,0 +1,8 @@
+LogisticRegression C:1 Type:Liblinear maxim_Iteration:100 scale:true verbose:false
+LSVC Type:Liblinear threads:1 C:0.7 maxim_Iteration:200 seed:1
+SklearnAdaBoostClassifier algorithm:SAMME.R learning_rate:0.7 n_estimators:100 threads:1 usedense:false seed:1 verbose:false
+SklearnExtraTreesClassifier criterion:entropy max_leaf_nodes:5 n_estimators:150 min_impurity_split:0.0000001 threads:1 max_features:0.8 max_depth:5 min_samples_leaf:1 min_samples_split:2 use_dense:false min_weight_fraction_leaf:0.0 new_tree_gain_ratio:1.0 bootsrap:false seed:1 verbose:false
+XgboostRegressor booster:gbtree objective:reg:linear num_round:100 eta:0.015 threads:1 gamma:2.0 max_depth:4 subsample:0.8 colsample_bytree:0.4 seed:1 verbose:false
+XgboostRegressor booster:gblinear objective:reg:gamma num_round:500 eta:0.5 threads:1 lambda:1 alpha:1 seed:1 verbose:false
+
+RandomForestClassifier estimators=1000 rounding:3 threads:4 max_depth:6 max_features:0.6 min_leaf:2.0 Objective:ENTROPY gamma:0.000001 row_subsample:1.0 verbose:false copy=false

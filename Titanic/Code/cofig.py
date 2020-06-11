@@ -1,0 +1,48 @@
+#-*-coding utf8 -*-
+"""
+@author:
+@biref:config for Titanic
+"""
+
+#-----------------PATH--------------------
+ROOT_DIR = "../Titanic"
+
+DATA_DIR = "%s/Data"%ROOT_DIR
+LOG_DIR = "%s/Log"%ROOT_DIR
+
+DATA_RAW_DIR = "%s/Data_Raw"%DATA_DIR
+DATA_CLEANED_DIR = "%s/CLEAN_DATA"%DATA_DIR
+DATA_FEATURE_DIR = "%s/PREPARED_DATA"%DATA_DIR
+
+STATS_DATA_DIR = "%s/STATS_DATA"%DATA_FEATURE_DIR
+INTERA_DATA_DIR = "%s/INTERA_DATA_DIR"%DATA_FEATURE_DIR
+
+FINISH_DATA_DIR = "%s/FINISH_DATA_DIR"%DATA_DIR
+
+OUTPUT_DIR = "%s/OUTPUT_DIR"%DATA_DIR
+
+SPLITTER_DIR = "%s/SPLITTER_DIR"%DATA_DIR
+
+TRAIN_DATA = "%s/train.csv"%DATA_RAW_DIR
+TEST_DATA = "%s/test.csv"%DATA_RAW_DIR
+
+CLEAN_TRAIN_DATA = "%s/train.csv"%DATA_CLEANED_DIR
+CLEAN_TEST_DATA = "%s/test.csv"%DATA_CLEANED_DIR
+
+STATS_DATA_TRAIN = "%s/train.pkl"%STATS_DATA_DIR
+INTERA_DATA_TRAIN = "%s/train.pkl"%INTERA_DATA_DIR
+STATS_DATA_TEST = "%s/test.pkl"%STATS_DATA_DIR
+INTERA_DATA_TEST = "%s/test.pkl"%INTERA_DATA_DIR
+
+FINISH_DATA_TRAIN = "%s/train.pkl"%FINISH_DATA_DIR
+FINISH_DATA_TEST = "%s/test.pkl"%FINISH_DATA_DIR
+
+SPLITTER = "%s.splitter.pkl"%SPLITTER_DIR
+
+
+#----------------PARAMS--------------------
+N_FOLDS = 5
+
+RANDOM_STATE = 42
+NUM_CORES = -1
+BASE_SCORE = 'accuracy'
